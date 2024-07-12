@@ -1,45 +1,65 @@
 ﻿@page "/"
+@inject IJSRuntime js
 
 <div class="main-container">
-    <aside>
-        <StarMenu MenuItems="menuItems" SelectedIndex="index" />
-    </aside>
-    <main>
-
-        <button @onclick="IncrementIndex" disabled="@isChanging">Forward</button>
-        <button @onclick="DecrementIndex" disabled="@isChanging">Backward</button>
-
-        <div class="music-visualizer"></div>
-        <div class="controlbuttons"></div>
-    </main>
+	<aside>
+		<StarMenu MenuItems="_menuItems" @ref="_starMenu" />
+	</aside>
+	<main>
+		<div class="music-visualizer"></div>
+		<div class="controlbuttons"></div>
+	</main>
 </div>
 
 @code {
 
-    private int index = 0;
-    private bool isChanging = false;
+	private int _currentIndex = 0;
+	private bool _isChanging = false;
+	private StarMenu _starMenu;
 
-    private List<string> menuItems = ["bi-spotify", "bi-bluetooth", "bi-tv-fill"];
+	private List<string> _menuItems = ["bi-spotify", "bi-bluetooth", "bi-tv-fill"];
 
-    private async Task IncrementIndex()
-    {
-        isChanging = true;
-        index = index == 7 ? 0 : index + 1;
-        await WaitChangeStatus();
-        isChanging = false;
-    }
+	protected async override Task OnInitializedAsync()
+	{
+		await js.InvokeVoidAsync("JsFunctions.addKeyboardListenerEvent", DotNetObjectReference.Create(this));
+	}
 
-    private async Task DecrementIndex()
-    {
-        isChanging = true;
-        index = index == 0 ? 7 : index - 1;
-        await WaitChangeStatus();
-        isChanging = false;
-    }
+	[JSInvokable]
+	public async Task JsKeyPress(string key)
+	{
+		if (!_isChanging)
+		{
+			switch (key)
+			{
+				case "w":
+					await SetIndex(_currentIndex + 1);
+					break;
+				case "s":
+					await SetIndex(_currentIndex - 1);
+					break;
+				case "a":
+					await SetIndex(0);
+					break;
+				case "d":
+					await SetIndex(2);
+					break;
+			}
+		}
+	}
 
-    private async Task WaitChangeStatus()
-    {
-        await Task.Delay(500);
-    }
+	private async Task SetIndex(int newIndex)
+	{
+		_isChanging = true;
+		_currentIndex = _starMenu.SetSelectedIndex(newIndex);
+		await WaitChangeStatus();
+		_isChanging = false;
+	}
+
+
+	private async Task WaitChangeStatus()
+	{
+		StateHasChanged();
+		await Task.Delay(500);
+	}
 }
 

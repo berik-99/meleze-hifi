@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Erik\\source\\repos\\Meleze.SBC.GUI\\",
+  "WorkspaceRootPath": "C:\\Users\\DY00307\\Desktop\\meleze-hifi\\Meleze.SBC.GUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|c:\\users\\erik\\source\\repos\\meleze.sbc.gui\\meleze.sbc.gui\\uicomponents\\starmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|solutionrelative:meleze.sbc.gui\\uicomponents\\starmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|c:\\users\\erik\\source\\repos\\meleze.sbc.gui\\meleze.sbc.gui\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|c:\\users\\dy00307\\desktop\\meleze-hifi\\meleze.sbc.gui\\meleze.sbc.gui\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|solutionrelative:meleze.sbc.gui\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|c:\\users\\erik\\source\\repos\\meleze.sbc.gui\\meleze.sbc.gui\\uicomponents\\starmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|c:\\users\\dy00307\\desktop\\meleze-hifi\\meleze.sbc.gui\\meleze.sbc.gui\\uicomponents\\starmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|solutionrelative:meleze.sbc.gui\\uicomponents\\starmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|c:\\users\\dy00307\\desktop\\meleze-hifi\\meleze.sbc.gui\\meleze.sbc.gui\\uicomponents\\starmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|solutionrelative:meleze.sbc.gui\\uicomponents\\starmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|c:\\users\\erik\\source\\repos\\meleze.sbc.gui\\meleze.sbc.gui\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|solutionrelative:meleze.sbc.gui\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|c:\\users\\dy00307\\desktop\\meleze-hifi\\meleze.sbc.gui\\meleze.sbc.gui\\helpers\\listextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533CF442-37E2-45AB-94DB-D2E74A259FCD}|Meleze.SBC.GUI\\Meleze.SBC.GUI.csproj|solutionrelative:meleze.sbc.gui\\helpers\\listextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,55 +29,59 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\DY00307\\Desktop\\meleze-hifi\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Meleze.SBC.GUI\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\DY00307\\Desktop\\meleze-hifi\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\Pages\\Home.razor",
+              "RelativeToolTip": "Meleze.SBC.GUI\\Pages\\Home.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T10:11:08.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\DY00307\\Desktop\\meleze-hifi\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\Helpers\\ListExtensions.cs",
+              "RelativeDocumentMoniker": "Meleze.SBC.GUI\\Helpers\\ListExtensions.cs",
+              "ToolTip": "C:\\Users\\DY00307\\Desktop\\meleze-hifi\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\Helpers\\ListExtensions.cs",
+              "RelativeToolTip": "Meleze.SBC.GUI\\Helpers\\ListExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T08:19:53.822Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "StarMenu.razor.css",
-              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\UIComponents\\StarMenu.razor.css",
+              "DocumentMoniker": "C:\\Users\\DY00307\\Desktop\\meleze-hifi\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\UIComponents\\StarMenu.razor.css",
               "RelativeDocumentMoniker": "Meleze.SBC.GUI\\UIComponents\\StarMenu.razor.css",
-              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\UIComponents\\StarMenu.razor.css",
+              "ToolTip": "C:\\Users\\DY00307\\Desktop\\meleze-hifi\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\UIComponents\\StarMenu.razor.css",
               "RelativeToolTip": "Meleze.SBC.GUI\\UIComponents\\StarMenu.razor.css",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACQAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-07-11T14:11:13.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StarMenu.razor",
-              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\UIComponents\\StarMenu.razor",
+              "DocumentMoniker": "C:\\Users\\DY00307\\Desktop\\meleze-hifi\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\UIComponents\\StarMenu.razor",
               "RelativeDocumentMoniker": "Meleze.SBC.GUI\\UIComponents\\StarMenu.razor",
-              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\UIComponents\\StarMenu.razor",
+              "ToolTip": "C:\\Users\\DY00307\\Desktop\\meleze-hifi\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\UIComponents\\StarMenu.razor",
               "RelativeToolTip": "Meleze.SBC.GUI\\UIComponents\\StarMenu.razor",
-              "ViewState": "AQIAACAAAAAAAAAAAADwv04AAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-11T14:11:07.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Home.razor.css",
-              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\Pages\\Home.razor.css",
-              "RelativeDocumentMoniker": "Meleze.SBC.GUI\\Pages\\Home.razor.css",
-              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\Pages\\Home.razor.css",
-              "RelativeToolTip": "Meleze.SBC.GUI\\Pages\\Home.razor.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-11T14:01:45.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Meleze.SBC.GUI\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Meleze.SBC.GUI\\Meleze.SBC.GUI\\Pages\\Home.razor",
-              "RelativeToolTip": "Meleze.SBC.GUI\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T18:03:34.271Z",
               "EditorCaption": ""
             }
           ]
