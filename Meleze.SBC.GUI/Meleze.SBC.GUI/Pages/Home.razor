@@ -2,64 +2,50 @@
 @inject IJSRuntime js
 
 <div class="main-container">
-	<aside>
-		<StarMenu MenuItems="_menuItems" @ref="_starMenu" />
-	</aside>
-	<main>
-		<div class="music-visualizer"></div>
-		<div class="controlbuttons"></div>
-	</main>
+    <aside>
+        <StarMenu MenuItems="_menuItems" SelectedIndexChange="IndexChange" @ref="_starMenu" />
+    </aside>
+    <main>
+        <div class="music-visualizer"></div>
+        <div class="controlbuttons"></div>
+    </main>
 </div>
 
 @code {
 
-	private int _currentIndex = 0;
-	private bool _isChanging = false;
-	private StarMenu _starMenu;
+    private int _currentIndex = 0;
+    private StarMenu _starMenu;
 
-	private List<string> _menuItems = ["bi-spotify", "bi-bluetooth", "bi-tv-fill"];
+    private List<string> _menuItems = ["bi-spotify", "bi-bluetooth", "bi-tv-fill"];
 
-	protected async override Task OnInitializedAsync()
-	{
-		await js.InvokeVoidAsync("JsFunctions.addKeyboardListenerEvent", DotNetObjectReference.Create(this));
-	}
+    protected async override Task OnInitializedAsync()
+    {
+        await js.InvokeVoidAsync("JsFunctions.addKeyboardListenerEvent", DotNetObjectReference.Create(this));
+    }
 
-	[JSInvokable]
-	public async Task JsKeyPress(string key)
-	{
-		if (!_isChanging)
-		{
-			switch (key)
-			{
-				case "w":
-					await SetIndex(_currentIndex + 1);
-					break;
-				case "s":
-					await SetIndex(_currentIndex - 1);
-					break;
-				case "a":
-					await SetIndex(0);
-					break;
-				case "d":
-					await SetIndex(2);
-					break;
-			}
-		}
-	}
+    private void IndexChange()
+    {
+        Console.WriteLine("Martina non vuole che scriva 'PORCODIO' allora metto 'ROSA'");
+    }
 
-	private async Task SetIndex(int newIndex)
-	{
-		_isChanging = true;
-		_currentIndex = _starMenu.SetSelectedIndex(newIndex);
-		await WaitChangeStatus();
-		_isChanging = false;
-	}
-
-
-	private async Task WaitChangeStatus()
-	{
-		StateHasChanged();
-		await Task.Delay(500);
-	}
+    [JSInvokable]
+    public async Task JsKeyPress(string key)
+    {
+        switch (key)
+        {
+            case "w":
+                _currentIndex = await _starMenu.SetSelectedIndexAsync(_currentIndex + 1);
+                break;
+            case "s":
+                _currentIndex = await _starMenu.SetSelectedIndexAsync(_currentIndex - 1);
+                break;
+            case "a":
+                _currentIndex = await _starMenu.SetSelectedIndexAsync(0);
+                break;
+            case "d":
+                _currentIndex = await _starMenu.SetSelectedIndexAsync(2);
+                break;
+        }
+    }
 }
 

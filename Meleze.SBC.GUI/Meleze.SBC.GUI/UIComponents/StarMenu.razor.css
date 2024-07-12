@@ -1,20 +1,25 @@
 .star-menu {
     width: 180px;
     overflow: hidden;
-    background: blue;
+    /*background: blue;*/
 }
 
 .star-menu-fixed {
     width: 480px;
     height: 480px;
-    transform: translateX(-340px) translateY(0px);
+    transition: all 250ms ease-in-out;
+    transform: translateX(-450px);
 }
+
+    .star-menu-fixed.enabled {
+        transform: translateX(-340px);
+    }
 
 .star-menu-rotating {
     width: 480px;
     height: 480px;
     position: relative;
-    transition: all 0.5s ease-in-out;
+    transition: all 250ms ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,22 +27,18 @@
 
 .menu-item {
     position: absolute;
-    transition: all 0.5s ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
-    .menu-item.item-1 {
-        transform: rotate(0deg) translate(220px) rotate(0deg);
-    }
+.menu-item > .icon {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkgray;
+    transition: all 250ms ease-in-out;
+}
 
-    .menu-item > .icon {
-        font-size: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: darkgray;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .menu-item.selected > .icon {
-        color: white;
-    }
+.menu-item.selected > .icon {
+    color: white;
+}
