@@ -1,0 +1,45 @@
+﻿@page "/"
+
+<div class="main-container">
+    <aside>
+        <StarMenu MenuItems="menuItems" SelectedIndex="index" />
+    </aside>
+    <main>
+
+        <button @onclick="IncrementIndex" disabled="@isChanging">Forward</button>
+        <button @onclick="DecrementIndex" disabled="@isChanging">Backward</button>
+
+        <div class="music-visualizer"></div>
+        <div class="controlbuttons"></div>
+    </main>
+</div>
+
+@code {
+
+    private int index = 0;
+    private bool isChanging = false;
+
+    private List<string> menuItems = ["bi-spotify", "bi-bluetooth", "bi-tv-fill"];
+
+    private async Task IncrementIndex()
+    {
+        isChanging = true;
+        index = index == 7 ? 0 : index + 1;
+        await WaitChangeStatus();
+        isChanging = false;
+    }
+
+    private async Task DecrementIndex()
+    {
+        isChanging = true;
+        index = index == 0 ? 7 : index - 1;
+        await WaitChangeStatus();
+        isChanging = false;
+    }
+
+    private async Task WaitChangeStatus()
+    {
+        await Task.Delay(500);
+    }
+}
+

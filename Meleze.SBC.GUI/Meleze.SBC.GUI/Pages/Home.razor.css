@@ -1,0 +1,15 @@
+﻿.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: black;
+}
+
+    .main-container > aside {
+        flex: auto;
+    }
+
+    .main-container > main {
+        flex: 1;
+        color: white;
+    }

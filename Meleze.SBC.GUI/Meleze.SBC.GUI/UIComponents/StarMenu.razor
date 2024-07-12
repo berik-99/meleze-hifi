@@ -1,0 +1,79 @@
+﻿@* <div class="star-menu">
+    <div class="star-menu-fixed">
+        <div class="star-menu-rotating" style="transform: rotate(@(_angle)deg);">
+            @for (int i = 0; i < MenuItems.Count; i++)
+            {
+                <div class="menu-item @i @(i == SelectedIndex ? "selected" : "")" style="transform: rotate(@(-i * 45)deg) translateX(220px) rotate(@(i * 45)deg)">
+                    <div style="transform: rotate(@(-_angle)deg) @(i == SelectedIndex ? "scale(2)" : "");" class="icon">
+                        <i class="bi @MenuItems[i]"></i>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int SelectedIndex
+    {
+        get => _selectedIndex;
+        set
+        {
+            var targetIndex = value < 0 ? 0 : value % MenuItems.Count;
+            var distance = MenuItems.DistanceBetween(_selectedIndex, targetIndex);
+            _angleIncrementer += distance;
+            _selectedIndex = targetIndex;
+        }
+    }
+
+    [Parameter]
+    public List<string> MenuItems { get; set; }
+
+    private int _selectedIndex = 0;
+    private int _angleIncrementer = 0;
+    private int _angle => _angleIncrementer * 45;
+}
+ *@
+
+<div class="star-menu">
+    <div class="star-menu-fixed">
+        <div class="star-menu-rotating" style="transform: rotate(@(_angle)deg);">
+            @for (int i = 0; i < 8; i++) // Sempre 8 spazi visibili
+            {
+                int index = (_selectedIndex + i) % MenuItems.Count; // Calcola l'indice effettivo nel MenuItems
+
+                <div class="menu-item @(i == 0 ? "selected" : "")" style="transform: rotate(@(-i * 45)deg) translateX(220px) rotate(@(i * 45)deg)">
+                    @if (index < MenuItems.Count)
+                    {
+                        <div style="transform: rotate(@(-_angle)deg) @(i == 0 ? "scale(2)" : "");" class="icon">
+                            <i class="bi @MenuItems[index]"></i>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int SelectedIndex
+    {
+        get => _selectedIndex;
+        set
+        {
+            var targetIndex = value < 0 ? 0 : value % MenuItems.Count;
+            var distance = MenuItems.DistanceBetween(_selectedIndex, targetIndex);
+            _angleIncrementer += distance;
+            _selectedIndex = targetIndex;
+        }
+    }
+
+    [Parameter]
+    public List<string> MenuItems { get; set; }
+
+    private int _selectedIndex = 0;
+    private int _angleIncrementer = 0;
+    private int _angle => _angleIncrementer * 45;
+}
